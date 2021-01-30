@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-content">
+            <a href="#" class="post">post</a>
+            <a href="#" class="get">get</a>
+            <a href="#" class="delete">delete</a>
+        </div>
+
+        <div class="post-wrapper box">
+            <form action="" class="form-area">
+                <div class="msg-area">
+                    <label for="msg">Message</label>
+                    <textarea id="msg"></textarea>
+                </div>
+                <div class="details-area">
+                    <label for="movie">Movie</label>
+                    <input type="text" name="" id="movie">
+
+                    <label for="actor">Actor</label>
+                    <input type="text" name="" id="actor">
+
+                    <label for="actress">Actress</label>
+                    <input type="text" name="" id="actress">
+
+                    <label for="director">Director</label>
+                    <input type="text" name="" id="director">
+
+                    <label for="ibmbi">IBMBI</label>
+                    <input type="text" name="" id="ibmbi">
+
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="get-wrapper box">
+            <form action="" class="form-area">
+                <div class="get-wrapper-btn">
+                    <a href="#" class="all-btn">All</a>
+                    <a href="#" class="getId-btn">
+                        <span><input type="number"></span>
+                        <span>Id</span>
+                    </a>
+                </div>
+                <div class="all-btn-wrapper box">
+                    <div class="msg-info">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" disabled></textarea>
+                    </div>
+                </div>
+                <div class="getId-btn-wrapper box">
+                    <div class="msg-info">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" disabled></textarea>
+                    </div>
+                    <a href="#" class="update-btn text-center">Update</a>
+                </div>
+            </form>
+        </div>
+        <div class="delete-wrapper box">
+            <form action="" class="form-area">
+                <div class="get-wrapper-btn">
+                    <a href="#" class="all-btn delete-all-btn">All</a>
+                    <a href="#" class="getId-btn delete-idBtn">
+                        <span><input type="number"></span>
+                        <span>Id</span>
+                    </a>
+                </div>
+
+                <div class="getId-btn-wrapper box deleteId-btn-wrapper">
+                    <div class="msg-info">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" disabled></textarea>
+                    </div>
+                    <a href="#" class="confirm-btn text-center">Confirm</a>
+                </div>
+            </form>
+        </div>
+
+
+        <!-- popup start-->
+        <div class="popup-wrapper">
+            <div class="popup-content">
+                <div class="popup-content-sec">
+                    <p>Are you sure want to clear all data?</p>
+                    <div class="popuup-btn">
+                        <a href="#" class="yes-btn text-center">YES</a>
+                        <a href="#" class="no-btn text-center">NO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- popup end-->
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.box').hide();
+            $(".post").click(function() {
+                $('.box').hide();
+                $('.post-wrapper').show();
+            });
+            $(".get").click(function() {
+                $('.box').hide();
+                $('.get-wrapper').show();
+            });
+            $(".delete").click(function() {
+                $('.box').hide();
+                $('.delete-wrapper').show();
+            });
+            $(".all-btn").click(function() {
+                $('.box').hide();
+                $('.all-btn-wrapper, .get-wrapper-btn, .get-wrapper').show();
+            });
+            $(".getId-btn").click(function() {
+                $('.box').hide();
+                $('.getId-btn-wrapper, .get-wrapper-btn, .get-wrapper').show();
+            });
+
+            $(".no-btn").click(function() {
+                $('.popup-wrapper').hide();
+            });
+
+            $(".delete-btn").click(function() {
+                $('.box').hide();
+                $('.delete-wrapper').show();
+            });
+
+
+            $(".delete-all-btn").click(function() {
+                $('.box').hide();
+                $('.delete-wrapper.box').show();
+                $('.popup-wrapper').css('display', 'flex');
+            });
+            $(".delete-idBtn").click(function() {
+                $('.box').hide();
+                $('.deleteId-btn-wrapper, .delete-wrapper').css('display', 'block');
+            });
+
+
+
+
+        });
+    </script>
+</body>
+
+</html>

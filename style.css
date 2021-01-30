@@ -1,0 +1,215 @@
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    body {
+        font-family: monospace;
+        overflow: hidden;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+    }
+    
+    .wrapper {
+        background: url('bg.jpg') no-repeat;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .post-wrapper {
+        display: none;
+    }
+    
+    .wrapper-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 12px 0;
+    }
+    
+    .wrapper-content a,
+    .all-btn,
+    .update-btn,
+    .yes-btn,
+    .no-btn,
+    .confirm-btn,
+    .getId-btn {
+        font-size: 15px;
+        padding: 15px 35px;
+        background: crimson;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    .form-area {
+        width: 50%;
+        display: flex;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 25px;
+        padding: 25px;
+    }
+    
+    .msg-area {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+    }
+    
+    .msg-area>textarea {
+        padding: 15px;
+        min-width: 18em;
+        flex: 1;
+        background: transparent;
+        color: #fff;
+        border: 1px solid white;
+    }
+    
+    .details-area {
+        flex: 1;
+        order: 1;
+    }
+    
+    .details-area {
+        flex: 1;
+        order: 1;
+        margin-right: 2em;
+    }
+    
+    .details-area input {
+        width: 100%;
+        background: transparent;
+        color: #fff;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        -ms-border-radius: 40px;
+        -o-border-radius: 40px;
+        outline: none;
+        font-family: cursive;
+        font-size: 16px;
+    }
+    
+    .details-area button {
+        font-size: 15px;
+        padding: 15px 35px;
+        background: crimson;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        border: 0 !important;
+        cursor: pointer;
+        outline: none;
+    }
+    
+    label {
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 40px;
+    }
+    
+    .details-area input,
+    .details-area button {
+        padding: 10px;
+        margin: 2px;
+        margin-left: 0;
+        border: 1px solid #fff;
+    }
+    
+    .submit {
+        margin-top: 10px !important;
+    }
+    
+    .get-wrapper-btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    input[type="number"] {
+        width: 59px;
+    }
+    
+    .get-wrapper .form-area {
+        flex-direction: column;
+    }
+    
+    .get-wrapper textarea,
+    .delete-wrapper textarea {
+        padding: 15px;
+        min-width: 18em;
+        flex: 1;
+        background: transparent;
+        color: #fff;
+        border: 1px solid white;
+        min-height: 290px;
+    }
+    
+    .msg-info {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+    
+    .popup-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000000a3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .popup-content {
+        background: white;
+        width: 50%;
+        border-radius: 50px;
+        padding: 50px;
+    }
+    
+    .popup-content p {
+        margin-bottom: 29px;
+        font-size: 19px;
+    }
+    
+    .popuup-btn {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .popup-wrapper {
+        display: none;
+    }
+    
+    .delete-wrapper .form-area {
+        display: block;
+    }
